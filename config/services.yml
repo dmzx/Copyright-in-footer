@@ -1,0 +1,8 @@
+services:
+    dmzx.copyright.listener:
+        class: dmzx\copyright\event\listener
+        arguments:
+            - @config
+            - @template
+        tags:
+            - { name: event.listener }
