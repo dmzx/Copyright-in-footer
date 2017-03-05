@@ -9,18 +9,13 @@
 
 namespace dmzx\copyright\event;
 
-/**
-* @ignore
-*/
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 
-/**
-* Event listener
-*/
 class listener implements EventSubscriberInterface
 {
 	/** @var \phpbb\config\config */
 	protected $config;
+
 	/** @var \phpbb\template\template */
 	protected $template;
 
@@ -31,7 +26,10 @@ class listener implements EventSubscriberInterface
 	* @param \phpbb\template\template	$template
 	*
 	*/
-	public function __construct(\phpbb\config\config $config, \phpbb\template\template $template)
+	public function __construct(
+		\phpbb\config\config $config,
+		\phpbb\template\template $template
+	)
 	{
 		$this->config = $config;
 		$this->template = $template;
@@ -58,8 +56,9 @@ class listener implements EventSubscriberInterface
 	public function page_footer($event)
 	{
 		$start_date = @gmdate('Y', $this->config['board_startdate']);
+
 		$this->template->assign_vars(array(
-			'L_COPYRIGHT_YEAR'			=> $start_date,
+			'L_COPYRIGHT_YEAR'	=>	$start_date,
 		));
 	}
 }

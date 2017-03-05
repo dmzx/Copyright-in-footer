@@ -38,5 +38,5 @@ if (empty($lang) || !is_array($lang))
 
 $lang = array_merge($lang, array(
 	'COPYRIGHT'					=> 'Copyright &copy;',
-	'COPYRIGHT_RESERVED'		=> 'All rights reserved.',
+	'COPYRIGHT_RESERVED'		=> 'Tous les droits sont réservés.',
 ));

@@ -5,6 +5,7 @@
 * @copyright (c) 2015 dmzx - http://www.dmzx-web.net
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
+* Translated By : Bassel Taha Alhitary - www.alhitary.net
 */
 
 /**
@@ -37,6 +38,6 @@ if (empty($lang) || !is_array($lang))
 //
 
 $lang = array_merge($lang, array(
-	'COPYRIGHT'					=> 'Copyright &copy;',
-	'COPYRIGHT_RESERVED'		=> 'All rights reserved.',
+	'COPYRIGHT'					=> 'حقوق الطبع والنشر &copy;',
+	'COPYRIGHT_RESERVED'		=> 'جميع الحقوق محفوظة.',
 ));
