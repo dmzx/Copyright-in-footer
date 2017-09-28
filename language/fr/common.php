@@ -1,15 +1,17 @@
 <?php
 /**
-*
-* @package phpBB Extension - Copyright in footer
-* @copyright (c) 2015 dmzx - http://www.dmzx-web.net
-* @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
-*
-*/
+ *
+ * Copyright in footer. An extension for the phpBB Forum Software package.
+ * French translation by tombraid & Galixte (http://www.galixte.com)
+ *
+ * @copyright (c) 2017 dmzx <http://www.dmzx-web.net>
+ * @license GNU General Public License, version 2 (GPL-2.0)
+ *
+ */
 
 /**
-* DO NOT CHANGE
-*/
+ * DO NOT CHANGE
+ */
 if (!defined('IN_PHPBB'))
 {
 	exit;
@@ -33,10 +35,10 @@ if (empty($lang) || !is_array($lang))
 // in a url you again do not need to specify an order e.g., 'Click %sHERE%s' is fine
 //
 // Some characters you may want to copy&paste:
-// ’ » “ ” …
+// ’ « » “ ” …
 //
 
 $lang = array_merge($lang, array(
 	'COPYRIGHT'					=> 'Copyright &copy;',
-	'COPYRIGHT_RESERVED'		=> 'Tous les droits sont réservés.',
+	'COPYRIGHT_RESERVED'		=> '- Toute utilisation, reproduction ou représentation, par quelque procédé que ce soit, et sur quelque support que ce soit, de tout ou partie du site et/ou des éléments qui le composent n’est pas autorisée sans le consentement exprès du propriétaire du forum.',
 ));
