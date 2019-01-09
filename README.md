@@ -1,5 +1,8 @@
 # Copyright in footer extension
 
+[![Build Status](https://travis-ci.org/dmzx/Copyright-in-footer.svg?branch=master)](https://travis-ci.org/dmzx/Copyright-in-footer)
+
+
 ## Install
 
 1. Download the latest release.
