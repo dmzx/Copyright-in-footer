@@ -2,20 +2,21 @@
 	"name": "dmzx/copyright",
 	"type": "phpbb-extension",
 	"description": "This extension adds copyright in footer.",
-	"homepage": "http://www.dmzx-web.net",
-	"version": "1.0.1",
-	"time": "2017-01-20",
+	"homepage": "https://www.dmzx-web.net",
+	"version": "1.0.2",
+	"time": "2019-01-02",
 	"license": "GPL-2.0",
 	"authors": [
 		{
 			"name": "dmzx",
-			"homepage": "http://www.dmzx-web.net",
+			"homepage": "https://www.dmzx-web.net",
 			"email": "info@dmzx-web.net",
 			"role": "Extension Developer"
 		}
 	],
 	"require": {
-		"php": ">=5.3.3"
+		"php": ">=5.3.3",
+		"phpbb/phpbb": ">=3.1.0,<3.3"
 	},
 	"require-dev": {
 		"phpbb/epv": "dev-master"
