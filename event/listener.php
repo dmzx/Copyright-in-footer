@@ -66,6 +66,7 @@ class listener implements EventSubscriberInterface
 
 		$this->template->assign_vars(array(
 			'L_COPYRIGHT_YEAR'	=>	$start_date,
+			'COPYRIGHT_YEAR'	=>	$start_date,
 			'L_COPYRIGHT_YEARS'	=>	$this->user->lang('COPYRIGHT_YEAR_ACTIVE', $year_date),
 		));
 	}

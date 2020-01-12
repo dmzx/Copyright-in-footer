@@ -1,9 +1,19 @@
-<script type="text/javascript">
-copyright=new Date();
+<script>
+copyright = new Date();
+update = copyright.getFullYear();
 
-update=copyright.getFullYear();
+var copyrights = {
+	years		: '{{ COPYRIGHT_YEAR | escape('js') }}',
+};
 
-document.write("{LA_COPYRIGHT} {LA_COPYRIGHT_YEAR} - "+ update +" {SITENAME} {LA_COPYRIGHT_RESERVED} - {LA_COPYRIGHT_YEARS}");
+if (update == copyrights.years)
+{
+	document.write("{{ lang('COPYRIGHT')|escape('js') }} {{ lang('COPYRIGHT_YEAR')|escape('js') }} {{ SITENAME }} {{ lang('COPYRIGHT_RESERVED')|escape('js') }}");
+}
+else
+{
+	document.write("{{ lang('COPYRIGHT')|escape('js') }} {{ lang('COPYRIGHT_YEAR')|escape('js') }} - "+ update +" {{ SITENAME }} {{ lang('COPYRIGHT_RESERVED')|escape('js') }} - {{ lang('COPYRIGHT_YEARS')|escape('js') }}");
+}
 
 </script>
 <br /><br />
